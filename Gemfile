@@ -19,7 +19,9 @@ group :development, :test do
   gem 'bundler-audit'
   gem 'pry'
   gem 'rails_best_practices'
+  gem 'rspec-rails'
   gem 'rubocop-rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
@@ -31,8 +33,14 @@ end
 
 group :test do
   gem 'capybara', '>= 3.26'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'selenium-webdriver'
+  gem 'simplecov'
+  gem 'timecop'
   gem 'webdrivers'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
