@@ -9,7 +9,7 @@ require 'rspec/rails'
 require 'database_cleaner/active_record'
 require 'capybara/rspec'
 
-Dir[Rails.root.join('spec/support/**/*.rb')].sort.each { |f| require f }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
 # Checks for pending migrations and applies them before tests are run.
 begin
