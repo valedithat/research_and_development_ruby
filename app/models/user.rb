@@ -40,5 +40,9 @@ class User < ApplicationRecord
 
   has_many :articles
 
+  validates_presence_of :bio
+  validates_presence_of :description
   validates_presence_of :name
+
+  validates :email, presence: true, uniqueness: true
 end
