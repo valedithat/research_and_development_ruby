@@ -38,5 +38,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :trackable, :confirmable, :lockable, :timeoutable, :omniauthable
 
+  has_many :articles
+
   validates_presence_of :name
 end
